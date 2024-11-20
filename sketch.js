@@ -296,7 +296,7 @@ function setup() {
   gifArray[3] = loadImage("assets/sleepangry.gif"); //sleeping angry
   gifArray[4] = loadImage("assets/wakingupbreakitdown.gif"); //waking up - shadow the hedgehog (2005) ost
   gifArray[5] = loadImage("assets/CC.gif"); //In CC
-  gifArray[6] = loadImage("assets/Honors.gif"); //In UH
+  gifArray[6] = loadImage("assets/honors.gif"); //In UH
   gifArray[7] = loadImage("assets/WArtHist.gif"); //In Western Art
   gifArray[8] = loadImage("assets/SCT.gif"); //In Securitas
   gifArray[9] = loadImage("assets/CM.gif"); //At Cyber Monday
