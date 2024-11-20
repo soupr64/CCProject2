@@ -263,6 +263,33 @@ function preload() {
   moonIcon = loadImage("assets/ccmoon.png");
   dayIcon = loadImage("assets/ccsun.png");
 
+  currentTimeIndex = 12;
+  //deturmines what time it is on startup, 12PM by default
+  //0 = 12AM, 12 = 12PM
+}
+
+function setup() {
+  let canvas = createCanvas(600, 400);
+  canvas.parent("sketch-holder");
+  rectMode(CENTER);
+  hud1 = dayIcon;
+
+  var button = createButton("+1 Day");
+  button.mousePressed(advanceDay);
+  button.parent("button-holder");
+
+  var button2 = createButton("-1 Day");
+  button2.mousePressed(rewindDay);
+  button2.parent("button-holder");
+
+  var button3 = createButton("+1 Hour");
+  button3.mousePressed(advanceHour);
+  button3.parent("button-holder");
+
+  var button4 = createButton("-1 Hour");
+  button4.mousePressed(rewindHour);
+  button4.parent("button-holder");
+
   gifArray[0] = loadImage("assets/homeworkcc.gif"); //cc homework
   gifArray[1] = loadImage("assets/sleepneutral.gif"); //sleeping neutral
   gifArray[2] = loadImage("assets/sleephappy.gif"); //sleeping happy
@@ -314,32 +341,6 @@ function preload() {
   gifArray[48] = loadImage("assets/WHISTartHW.gif"); //western history art homework in the day
   //god this is gonna lag so bad :sob:
 
-  currentTimeIndex = 12;
-  //deturmines what time it is on startup, 12PM by default
-  //0 = 12AM, 12 = 12PM
-}
-
-function setup() {
-  let canvas = createCanvas(600, 400);
-  canvas.parent("sketch-holder");
-  rectMode(CENTER);
-  hud1 = dayIcon;
-
-  var button = createButton("+1 Day");
-  button.mousePressed(advanceDay);
-  button.parent("button-holder");
-
-  var button2 = createButton("-1 Day");
-  button2.mousePressed(rewindDay);
-  button2.parent("button-holder");
-
-  var button3 = createButton("+1 Hour");
-  button3.mousePressed(advanceHour);
-  button3.parent("button-holder");
-
-  var button4 = createButton("-1 Hour");
-  button4.mousePressed(rewindHour);
-  button4.parent("button-holder");
 }
 function draw() {
   background(0, 100, 250);
