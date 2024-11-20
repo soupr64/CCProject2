@@ -337,7 +337,7 @@ function setup() {
   gifArray[44] = loadImage("assets/whydoyouwannastay.gif"); //five night feddy :D
   gifArray[45] = loadImage("assets/reloaddorm.gif"); //reload but in dorm
   gifArray[46] = loadImage("assets/lethalcompany.gif"); //lethal company
-  gifArray[47] = loadImage("cchomeworkday.gif"); //cc homework in the day
+  gifArray[47] = loadImage("assets/cchomeworkday.gif"); //cc homework in the day
   gifArray[48] = loadImage("assets/WHISTartHW.gif"); //western history art homework in the day
   //god this is gonna lag so bad :sob:
 
