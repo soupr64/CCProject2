@@ -340,7 +340,7 @@ function setup() {
   gifArray[47] = loadImage("assets/cchomeworkday.gif"); //cc homework in the day
   gifArray[48] = loadImage("assets/WHISTartHW.gif"); //western history art homework in the day
   //god this is gonna lag so bad :sob:
-
+//test
 }
 function draw() {
   background(0, 100, 250);
